@@ -1,5 +1,5 @@
 {
-    "name": "sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ",
+  "name": "sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ",
   "description": "A Telegram Bot to generate Telethon and Pyrogram String Session.",
   "logo": "https://telegra.ph/file/654ddaf472f18b799600b.jpg",
   "keywords": [
@@ -11,40 +11,33 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "  eco"
-        }
-     },
-       "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
-    "env": {
-        "BOT_TOKEN": {
-            "description": "Your bot token",
-            "value": "",
-            "required": true
-        },
-        "API_ID": {
-            "description": "Get from https://my.telegram.org",
-            "value": "",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "Get from https://my.telegram.org",
-            "value": "",
-            "required": true
-        },
-        "SUDO": {
+  "repository": "https://github.com/sourcesemsem/bot20",
+  "env": {
+    "ENVIRONMENT": {
+      "description": "Don't change ANYTHING.",
+      "required": true,
+      "value": "ANYTHING"
+    },
+    "API_ID": {
+      "description": "Get this value from my.telegram.org/apps.",
+      "required": true,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org/apps.",
+      "required": true,
+      "value": ""
+    },
+    "SUDO": {
             "description": "sudo ids here.",
             "value": "",
             "required": true
-        }
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Get this value from @BotFather",
+      "required": true,
+      "value": ""
     }
+  }
 }
